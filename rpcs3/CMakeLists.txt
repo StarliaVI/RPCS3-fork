@@ -110,14 +110,20 @@ if (NOT ANDROID)
                 MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/rpcs3.plist.in")
     endif()
 
+    # Keep the experimental modern frontend directly on the executable target.
+    # This prevents the bootstrap startup hook from being discarded when
+    # rpcs3_ui is linked as a static library.
     target_sources(rpcs3
         PRIVATE
             main.cpp
+            rpcs3qt/modern/modern_bootstrap.cpp
+            rpcs3qt/modern/modern_shell.cpp
     )
 
     target_link_libraries(rpcs3
         PRIVATE
             rpcs3_lib
+            3rdparty::qt6
     )
 
     if(USE_PRECOMPILED_HEADERS)

@@ -104,7 +104,6 @@ add_library(rpcs3_ui STATIC
     screenshot_preview.cpp
     sendmessage_dialog_frame.cpp
     settings.cpp
-    settings_dialog.cpp
     shortcut_utils.cpp
     shortcut_dialog.cpp
     shortcut_handler.cpp

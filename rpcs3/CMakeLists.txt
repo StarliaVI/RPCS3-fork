@@ -166,7 +166,7 @@ if (NOT ANDROID)
         install(FILES rpcs3.desktop
             DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications)
         install(FILES rpcs3.metainfo.xml
-            DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications)
+            DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/metainfo)
         # Install other files
         install(DIRECTORY ../bin/Icons
             DESTINATION ${CMAKE_INSTALL_DATADIR}/rpcs3)

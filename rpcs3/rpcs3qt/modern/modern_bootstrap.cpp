@@ -5,6 +5,13 @@
 #include <QMenu>
 #include <QTimer>
 
+// This symbol is intentionally referenced by rpcs3/main.cpp.
+// rpcs3_ui is a static library, so without an explicit reference the linker
+// is free to discard this translation unit before Qt's startup hook can run.
+void force_link_modern_ui_bootstrap()
+{
+}
+
 namespace
 {
 	constexpr int max_install_attempts = 80;

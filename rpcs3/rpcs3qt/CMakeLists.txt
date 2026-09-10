@@ -62,6 +62,8 @@ add_library(rpcs3_ui STATIC
     log_level_dialog.cpp
     log_viewer.cpp
     main_window.cpp
+    modern/modern_bootstrap.cpp
+    modern/modern_shell.cpp
     memory_string_searcher.cpp
     memory_viewer_panel.cpp
     microphone_creator.cpp

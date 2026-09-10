@@ -62,8 +62,6 @@ add_library(rpcs3_ui STATIC
     log_level_dialog.cpp
     log_viewer.cpp
     main_window.cpp
-    modern/modern_bootstrap.cpp
-    modern/modern_shell.cpp
     memory_string_searcher.cpp
     memory_viewer_panel.cpp
     microphone_creator.cpp
@@ -106,7 +104,6 @@ add_library(rpcs3_ui STATIC
     screenshot_preview.cpp
     sendmessage_dialog_frame.cpp
     settings.cpp
-    settings_dialog.cpp
     shortcut_utils.cpp
     shortcut_dialog.cpp
     shortcut_handler.cpp
